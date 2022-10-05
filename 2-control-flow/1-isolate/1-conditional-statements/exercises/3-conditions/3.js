@@ -14,13 +14,21 @@ const value1 = '';
 const value2 = -1;
 let path = '';
 
-if (_) {
+if (typeof value1 !== typeof value2) {
   path = 'if';
-} else if (_) {
+} else if (value1 === value2) {
   path = 'else if';
 } else {
   path = 'else';
 }
+
+/*
+(value1 !== value2)
+(value1 > value2)
+(value2 < value1)
+(Number(value1 > value2))
+(Boolean(value1) !== Boolean(value2))
+*/
 
 console.assert(path === 'if', 'path should be "if"');
 

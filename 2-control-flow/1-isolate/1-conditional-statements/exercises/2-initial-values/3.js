@@ -6,10 +6,10 @@ console.log('-- begin --');
 
 // can you find at least one solution to reach each path?
 //  what do all solutions to the same path have in common?
-// or maybe there are unreachable paths!
+// or maybe there are unreachable paths! 
 
-const value1 = _;
-const value2 = _;
+const value1 = true; // false // false //true
+const value2 = false; //false //true //true
 let path = '';
 
 if (value1 && !value2) {
@@ -22,6 +22,6 @@ if (value1 && !value2) {
   path = 'else';
 }
 
-console.log(path);
+console.log(path); // if
 
 console.log('-- end --');

@@ -18,7 +18,7 @@ console.log('-- begin --');
 
 */
 
-const toRepeat = 'howdy';
+let toRepeat = 'howdy';
 const totalRepetitions = 4;
 
 let repeatedString = '';
@@ -27,11 +27,11 @@ let repeatedString = '';
   used to count the number of times the string has been repeated
 */
 let i = 0;
-while (_) {
-  repeatedString = _;
+while (i < totalRepetitions) {
+  repeatedString =repeatedString + toRepeat;
   console.log(repeatedString);
 
-  _; // i should grow by 1
+  i = i + 1; // i should grow by 1
 }
 
 console.assert(
