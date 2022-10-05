@@ -8,8 +8,8 @@ console.log('-- begin --');
 //  what do all solutions to the same path have in common?
 // or maybe there are unreachable paths!
 
-const value1 = _;
-const value2 = _;
+const value1 = 1; //null //'1' //no variants //null
+const value2 = 1; //0    //1   //              //1
 let path = '';
 
 if (value1 === value2) {

@@ -15,11 +15,11 @@ console.log('-- begin --');
 */
 
 /* fill in the initial value to pass the assertion
-  there are more than 1 correct answer!
-  how many can you find?
-  what do all the correct answers have in common?
+  there are more than 1 correct answer! (128 righ answers)
+  how many can you find? 
+  what do all the correct answers have in common? (it all more, than 0 and less than 129)
 */
-let sum = _;
+let sum = 1;
 
 while (sum < 100) {
   if (sum % 2 === 0) {

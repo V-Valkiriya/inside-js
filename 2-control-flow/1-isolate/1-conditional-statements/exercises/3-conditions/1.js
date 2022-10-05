@@ -14,11 +14,18 @@ const value1 = 'hello';
 const value2 = false;
 let path = '';
 
-if (_) {
+if (value1 === value2) {
   path = 'if';
 } else {
   path = 'else';
 }
+/* 
+if (!value1 === !value2)
+if (!value1 !== value2)
+if (value1 > value2)
+if (value1.lenght > value2)
+if (value1 < value2)
+*/ 
 
 console.assert(path === 'else', 'path should be "else"');
 
