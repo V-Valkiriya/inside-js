@@ -5,7 +5,9 @@
 console.log('-- begin --');
 
 /**
- *
+ *@param {string} [text = ''] param to for
+ *@param {numder} [toSkip = 1] param for comparison
+ *return param1 or part of it
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {

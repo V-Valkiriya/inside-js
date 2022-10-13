@@ -15,7 +15,7 @@ let temp;
 // --- swap values ---
 
 a = b; // w
-b = d;// x
+b = d; // x
 temp = 'y';
 c = temp; // y
 temp = 'z';

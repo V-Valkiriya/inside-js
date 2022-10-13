@@ -10,7 +10,7 @@ let callStackRoot = 0;
 const func1 = (depth) => {
   console.log('entering func 1');
   if (depth === 3) {
-    throw new Error('read the call stack!');
+    console.log('read the call stack!');
   }
   console.log('leaving func 1');
 };

@@ -12,7 +12,7 @@ const secretInformation = true;
 const warningMessage = false;
 console.log(isLoggedIn, secretInformation, warningMessage);
 
-let toDisplay = isLoggedIn ? secretInformation : warningMessage; 
+let toDisplay = isLoggedIn ? secretInformation : warningMessage;
 
 console.log(toDisplay);
 

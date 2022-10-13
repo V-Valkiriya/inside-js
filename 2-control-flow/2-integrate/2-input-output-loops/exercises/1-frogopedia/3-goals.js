@@ -7,7 +7,11 @@ while (true) {
   userInput = prompt('tell me something about frogs');
 
   /* -- BEGIN: validate input -- */
-
+  if (userInput === null || userInput === '') {
+    alert('Please, try again.');
+  } else if (userInput.toLowerCase().includes('frog')) {
+    break;
+  }
   /* -- END: validate input -- */
 }
 

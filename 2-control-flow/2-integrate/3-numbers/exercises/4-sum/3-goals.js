@@ -18,6 +18,20 @@ while (!isDone) {
   userInput = prompt('enter a number to add, or "done" to finish');
 
   /* -- BEGIN: handle user input - nothing, done, a number or not a number -- */
+  if (userInput === null || userInput === '') {
+    alert('nope, try again');
+  } else if (userInput.toLowerCase() === 'done') {
+    break;
+  }
+
+  const nextNumber = Number(userInput);
+  if (Number.isNaN(nextNumber)) {
+    alert(`"${userInput}" is not a number`);
+    continue;
+  } else {
+    sum += nextNumber;
+  }
+
   /* -- END -- */
 }
 

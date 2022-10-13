@@ -10,7 +10,7 @@ console.log('-- begin --');
 const a = 1001;
 console.log(a);
 
-const isBigNumber = a > 1000; 
+const isBigNumber = a > 1000;
 console.log(isBigNumber);
 
 if (isBigNumber) {

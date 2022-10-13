@@ -15,10 +15,12 @@ console.log('originalString:', originalString);
 
 let reverseUpperCase = '';
 
-for (_; _; _) {
-  // a blank canvas :)
+for (let i = originalString.length - 1; i >= 0; i--) {
+  let nextletter = originalString[i].toUpperCase();
+  reverseUpperCase += nextletter;
 }
 
+console.log(reverseUpperCase);
 console.assert(
   reverseUpperCase === 'EDCBA',
   'reversed string is the original reversed',

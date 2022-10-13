@@ -13,9 +13,8 @@ console.log(firstName, lastName);
 
 const hasAnAName = firstName[0] === 'A' || lastName[0] === 'A';
 if (hasAnAName) {
-firstName[0] === 'A';
-} else 
-lastName[0] === 'A';
+  firstName[0] === 'A';
+} else lastName[0] === 'A';
 console.log(hasAnAName);
 
 console.log('-- end --');

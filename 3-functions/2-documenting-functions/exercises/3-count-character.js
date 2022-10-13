@@ -4,8 +4,11 @@
 
 console.log('-- begin --');
 
-/**
+/** Count characters
  *
+ * @param {string} [text=''] word to for
+ * @param {string} [toCount =''] word for check
+ * returns {number} -1 or sum of counts
  */
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {

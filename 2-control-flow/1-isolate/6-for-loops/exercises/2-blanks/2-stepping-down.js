@@ -22,12 +22,16 @@ console.log('-- begin --');
 */
 
 const holiday = 'winter solstice';
-const message = 'days remaining until ' + holiday;
+const message = ' days remaining until ' + holiday;
 
 let tweet = '';
-for (let daysToHoliday = 14; daysToHoliday > 0; daysToHoliday--) {
+for (let daysToHoliday = 14; daysToHoliday >= 1; daysToHoliday--) {
   tweet = daysToHoliday + message;
   console.log(tweet);
+
+  if (daysToHoliday === 1) {
+    console.log('there are 0 days remaining');
+  }
 }
 
 console.assert(

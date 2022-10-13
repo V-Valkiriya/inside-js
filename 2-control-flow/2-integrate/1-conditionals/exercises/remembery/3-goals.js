@@ -41,5 +41,19 @@ if (randomFrom1To3 === 1) {
 }
 
 /* -- BEGIN: check if the user was correct and let them know -- */
+const guesIsRight = attempt === correctAnswer;
+let result = '';
 
+if (guesIsRight) {
+  result =
+    'yes, you win! Phrase ' +
+    randomFrom1To3 +
+    ' was ' +
+    '"' +
+    correctAnswer +
+    '"';
+} else {
+  result = 'no, :(';
+}
+alert(result);
 /* -- END: check if the user was correct and let them know -- */

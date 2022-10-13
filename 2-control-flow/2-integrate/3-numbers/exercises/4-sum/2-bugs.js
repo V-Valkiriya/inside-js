@@ -24,18 +24,19 @@ let isDone = false;
 while (!isDone) {
   userInput = prompt('enter a number to add, or "done" to finish');
 
-  if (userInput === '' && userInput === null) {
+  if (userInput === '' || userInput === null) {
     alert('nothing is not allowed');
-  } else if (userInput.toLowerCase() === 'DONE') {
-    isDone = true;
+  } else if (userInput.toLowerCase() !== 'done') {
+    isDone = false;
   } else {
-    const nextNumber = Number(userInput);
+    break;
+  }
+  const nextNumber = Number(userInput);
 
-    if (Number.isNaN(nextNumber)) {
-      alert('"' + userInput + '" is not a number, it has been ignored');
-    } else {
-      sum += sum + nextNumber;
-    }
+  if (Number.isNaN(nextNumber)) {
+    alert('"' + userInput + '" is not a number, it has been ignored');
+  } else {
+    sum += nextNumber;
   }
 }
 

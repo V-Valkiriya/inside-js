@@ -30,6 +30,28 @@ const phrasesToRemember = `Player 2, remember these:
 alert(phrasesToRemember);
 
 /* -- BEGIN: gather player 2's guesses) -- */
+let points = 0;
+
+const guess1 = prompt('Player1, enter your first guess');
+if (guess1 === phrase1) {
+  points += 1;
+} else {
+  points = points;
+}
+
+const guess2 = prompt('Player1, enter your second guess');
+if (guess2 === phrase2) {
+  points += 1;
+} else {
+  points = points;
+}
+
+const guess3 = prompt('Player1, enter your third guess');
+if (guess3 === phrase3) {
+  points += 1;
+} else {
+  points = points;
+}
 
 /* -- END: gather player 2's guesses -- */
 

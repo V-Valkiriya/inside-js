@@ -32,6 +32,15 @@ while (!userConfirmed) {
       }
     }
     /* -- BEGIN: ask the user to confirm their string and shift number -- */
+    const confirmMessage = `Is this correct?  
+    - "${userInput}" 
+    - "${unicodeShift}" `;
+    const conformation = confirm(confirmMessage);
+    if (conformation) {
+      break;
+    } else {
+      continue;
+    }
     /* -- END -- */
   }
 }
