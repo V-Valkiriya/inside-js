@@ -28,7 +28,7 @@ let repeatedString = '';
 */
 let i = 0;
 while (i < totalRepetitions) {
-  repeatedString =repeatedString + toRepeat;
+  repeatedString = repeatedString + toRepeat;
   console.log(repeatedString);
 
   i = i + 1; // i should grow by 1

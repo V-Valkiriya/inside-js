@@ -9,7 +9,7 @@ const z = 'jar';
 
 // ---
 
-const a = typeof w === typeof y; // 
+const a = typeof w === typeof y; //
 console.assert(a === true, 'a');
 
 const b = y + ' ' + z === 'horsejar';

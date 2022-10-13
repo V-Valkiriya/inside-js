@@ -5,7 +5,9 @@
 console.log('-- begin --');
 
 /**
- *
+ *@param {string} [text='']
+ *@param {number} [shift=0]
+ *returns string of deduction params
  */
 const unicodeShuffle = (text = '', shift = 0) => {
   let encodedString = '';

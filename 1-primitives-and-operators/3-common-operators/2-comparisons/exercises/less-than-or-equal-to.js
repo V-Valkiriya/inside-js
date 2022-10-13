@@ -27,7 +27,7 @@ const _4_expect = false <= false; // __
 const _4_native = '0.0' <= false;
 console.assert(_4_expect === _4_native, 'Test 4');
 
-const _5_expect = true ; // __
+const _5_expect = true; // __
 const _5_native = false <= true;
 console.assert(_5_expect === _5_native, 'Test 5');
 

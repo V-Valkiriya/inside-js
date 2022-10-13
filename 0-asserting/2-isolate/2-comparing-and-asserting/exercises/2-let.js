@@ -15,6 +15,6 @@ desert = desert + ' with ' + topping;
 console.assert(desert === 'chocolate cake with frosting', 'Test 2');
 
 desert = `${desert} and banana`;
-console.assert(desert === 'chocolate cake with frosting and banana' ,'Test 3');
+console.assert(desert === 'chocolate cake with frosting and banana', 'Test 3');
 
 console.log('-- end --');

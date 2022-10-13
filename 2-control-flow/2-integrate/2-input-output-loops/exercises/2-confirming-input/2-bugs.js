@@ -12,17 +12,20 @@
 
 let userInput = '';
 let userConfirmed = false;
-while (userConfirmed) {
+while (!userConfirmed) {
   userInput = prompt('enter your name:');
   console.log('userInput:', typeof userInput, userInput);
 
-  if (userInput === false) {
+  if (userInput === null || userInput === '') {
     alert('nothing is not a name');
     continue;
   }
 
   const confirmMessage = 'is this correct?\n"' + userInput + '"';
-  userConfirmed = alert(confirmMessage);
+  userConfirmed = confirm(confirmMessage);
+  if (userInput === true) {
+    break;
+  }
 }
 
 const finalMessage = `your name is: "${userInput}"`;

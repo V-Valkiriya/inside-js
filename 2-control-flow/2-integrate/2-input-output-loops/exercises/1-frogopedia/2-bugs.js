@@ -11,10 +11,10 @@
 
 let userInput = '';
 let inputIsAboutFrogs = true;
-while (!inputIsAboutFrogs) {
+while (inputIsAboutFrogs) {
   userInput = prompt('tell me something about frogs');
 
-  if (inputIsAboutFrogs === '' && inputIsAboutFrogs === null) {
+  if (inputIsAboutFrogs === '' || inputIsAboutFrogs === null) {
     alert('that is not something');
   }
   // regular expression: this works!
