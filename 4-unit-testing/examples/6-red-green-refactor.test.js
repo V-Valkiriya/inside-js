@@ -30,7 +30,16 @@
  */
 const numberOrType = (value) => {
   // pass the first test
-  return 14;
+  if (value === 14) {
+     return 14;
+   } else if (value === -10) {
+     return -10
+   } else if (typeof value === 'number') {
+    return value;
+  } else {
+    return typeof value;
+ }
+
 
   // // pass the second test
   // if (value === 14) {
