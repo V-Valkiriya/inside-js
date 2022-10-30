@@ -10,17 +10,20 @@
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let itIs = _;
+  let itIs = '';
   for (let i = 0; i <= toCheck.length / 2; i++) {
-    const left = toCheck[_];
-    const right = toCheck[_];
-    if (_) {
-      itIs = _;
+    const left = toCheck[i];
+    const right = toCheck[toCheck.length - 1 - i];
+    if (left === right) {
+      itIs = true;
       __;
     }
-  }
+  };
+    
   return itIs;
 };
+
+const x = isPalindrome('racecar');
 
 describe('isPalindrome: checks if a string is the same forwards and backwards', () => {
   describe('what is a palindrome', () => {

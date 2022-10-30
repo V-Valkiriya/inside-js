@@ -14,3 +14,5 @@ export const filterByLength = (strings = [], goodLength = 0) => {
   }
   return result;
 };
+
+console.log(filterByLength(['dog', 'cat', 'bird'], 3));

@@ -21,7 +21,7 @@
  */
 const isPalindrome = (toCheck = '') => {
   let reversed = '';
-  for (const character of reversed) {
+  for (const character of reversed) { // should change reserved to toCheck
     reversed = character + reversed;
   }
   return toCheck === reversed;

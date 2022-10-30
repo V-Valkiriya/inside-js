@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 /* 
 1. Write a function that gets a name of a month as a string and RETURNS which month of the year it is. iIf it is not a month it should return 0.
 // Example: findTheMonth(‘August’) should return 8
@@ -13,39 +13,49 @@ You must use SLICE method
  should return 108 You must use REDUCE method
  */
 
-
 // 1
-function findTheMonth (month) {
-  const months = ['nomonth', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+function findTheMonth(month) {
+  const months = [
+    'january',
+    'february',
+    'march',
+    'april',
+    'may',
+    'june',
+    'july',
+    'august',
+    'september',
+    'october',
+    'november',
+    'december',
+  ];
   const indexOfMonth = months.indexOf(month.toLowerCase());
   if (indexOfMonth < 0) {
     return 0;
   }
-  return indexOfMonth;
+  return indexOfMonth + 1;
 }
 
 console.log(findTheMonth('August'));
 console.log(findTheMonth('october'));
 console.log(findTheMonth('Tuesday'));
 
-
-
-
 // 2
-function extractTheOrderOfSuccess (array, startNumber, endNumber) {
- const result = array.slice(startNumber-1, endNumber);
- return result;
+function extractTheOrderOfSuccess(array, startNumber, endNumber) {
+  return array.slice(startNumber - 1, endNumber);
 }
 
-console.log(extractTheOrderOfSuccess(['Annie',  'Shirley', 'Abed', 'Britta', 'Troy', 'Jeff', 'Pierce' ], 2, 6));
-
-
-
+console.log(
+  extractTheOrderOfSuccess(
+    ['Annie', 'Shirley', 'Abed', 'Britta', 'Troy', 'Jeff', 'Pierce'],
+    2,
+    6,
+  ),
+);
 
 // 3
 function calculateTheSum(array) {
-  const sum = array.reduce((partialSum, a) => partialSum + a, 0);
-  return sum;
+  return array.reduce((partialSum, a) => partialSum + a, 0);
 }
 
 console.log(calculateTheSum([4, 8, 15, 16, 23, 42]));

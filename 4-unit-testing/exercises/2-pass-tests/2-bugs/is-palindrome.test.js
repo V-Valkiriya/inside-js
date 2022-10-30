@@ -12,10 +12,14 @@
 const isPalindrome = (toCheck = '') => {
   let reversed = ' ';
   for (const character of toCheck) {
-    reversed += character + reversed;
+    reversed = character + reversed;
   }
-  return (toCheck = reversed);
+  console.log(toCheck);
+  console.log(reversed);
+  return (toCheck === reversed);
 };
+
+console.log(isPalindrome('racecar'));
 
 describe('isPalindrome: checks if a string is the same forwards and backwards', () => {
   describe('what is a palindrome', () => {

@@ -8,4 +8,16 @@
  *
  * @returns {Array} a copy of the array with one entry modified
  */
-export const replaceEntry = () => {};
+export const replaceEntry = (arr, index, newEntry) => {
+  const copyArray = arr.slice();
+  const changeEntry = copyArray.splice(index, 1, newEntry);
+  return changeEntry;
+
+};
+
+
+console.log(replaceEntry(['a', 'b', 'c'], 0, 'x'));
+
+const arr = ['a', 'b', 'c'];
+arr.splice(0, 1, 'x');
+console.log(arr);

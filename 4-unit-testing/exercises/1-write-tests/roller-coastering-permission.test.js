@@ -19,37 +19,55 @@ const rollerCoasterPermission = (height = 0) => {
   }
 };
 
+console.log(rollerCoasterPermission(NaN));
+
 describe('a function that tells you are tall enough', () => {
   describe('when height is not a number, the function says so', () => {
     it('true -> "height is not a number"', () => {
       const actual = rollerCoasterPermission(true);
-      const expected = _;
+      const expected = 'height is not a number';
       expect(actual).toEqual(expected);
     });
     it('"tall" -> "height is not a number"', () => {
-      const expected = _;
+      const expected = 'height is not a number';
       const actual = rollerCoasterPermission('tall');
-      _;
+      expect(actual).toEqual(expected);
     });
-    // more tests?
+    it('"heigh" -> "height is not a number"', () => {
+      const actual = rollerCoasterPermission('height');
+      const expected = 'height is not a number';
+      expect(expected).toEqual(actual);
+  });
   });
   describe('when height is a number', () => {
     it('numbers less than 100 return "too short, sorry :("', () => {
       const expected = 'too short, sorry :(';
-      const actual = rollerCoasterPermission(_);
-      _;
+      const actual = rollerCoasterPermission(98);
+      expect(expected).toEqual(actual);
     });
     it('numbers equal to 100 return "just right, hop on!"', () => {
       const expected = 'just right, hop on!';
-      const actual = rollerCoasterPermission(_);
-      _;
+      const actual = rollerCoasterPermission(NaN);
+      expect(expected).toEqual(actual);
     });
     it('numbers greater than 100 return "hope on the roller coaster!"', () => {
       const expected = 'hop on the roller coaster!';
-      const actual = rollerCoasterPermission(_);
-      _;
+      const actual = rollerCoasterPermission(120);
+      expect(expected).toEqual(actual);
     });
-    // more tests?
+    describe('when heigh is a empty', () => {
+      it('empty return "height is not a number"', () => {
+      const expected = 'height is not a number';
+      const actual = rollerCoasterPermission('');
+      expect(expected).toEqual(actual);
   });
-  // more tests?
+ });
+ describe('when heigh is null', () => {
+      it('empty return "height is not a number"', () => {
+      const expected = 'height is not a number';
+      const actual = rollerCoasterPermission(null);
+      expect(expected).toEqual(actual);
+  });
+});
+});
 });

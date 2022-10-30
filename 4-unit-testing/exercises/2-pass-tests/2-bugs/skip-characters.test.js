@@ -10,15 +10,15 @@
  * @param {number} [toSkip=1] - How often to skip a character.
  * @returns {string} The text with missing characters.
  */
-const skipCharacters = (text = '', toSkip = 1) => {
+const skipCharacters = (text = '', toSkip = 0) => {
   if (toSkip < 1) {
     return text;
   }
 
   let skipified = '';
   let index = 0;
-  for (const character of text) {
-    if (++index % toSkip === 0) {
+  for (let character of text) {
+    if (index++ % toSkip !== 0) {
       skipified += character;
     }
   }
