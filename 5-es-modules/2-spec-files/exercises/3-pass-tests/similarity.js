@@ -6,4 +6,16 @@
  * @param {any} b - the second value
  * @returns {string} how similar are a and b?
  */
-__;
+export const similarity = (a, b) => {
+if (a === b || a === Number(b))  {
+  return 'exactly the same';
+} else if (typeof(a) === Number.isNaN() && typeof(b) === Number.isNaN()) {
+return 'exactly the same';
+} else if (typeof(a) === typeof(b)) {
+  return 'the same type';
+} else {
+  return 'nothing alike';
+}
+};
+
+console.log(similarity(NaN, NaN));

@@ -27,13 +27,12 @@ const findDuplicate = (numArr) => {
     }
     const rest = numArr.slice(i + 1);
     if (rest.indexOf(element) !== -1) {
-      duplicates.push(element)
+      duplicates.push(element);
     } else {
       noDuplicate.push(element);
     }
-
-  })
+  });
   return noDuplicate.concat(duplicates.sort((a, b) => a - b));
-}
+};
 
-console.log(findDuplicate([1,2,4,5,4,8]));
+console.log(findDuplicate([1, 2, 4, 5, 4, 8]));
