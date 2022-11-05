@@ -7,10 +7,6 @@ describe('determine how similar two values are', () => {
       const actual = similarity(1000, 1e3);
       expect(actual).toEqual(expected);
     });
-    it('NaN and NaN', () => {
-      const actual = similarity(NaN, NaN);
-      expect(actual).toEqual(expected);
-    });
     it('"hello" and "hello"', () => {
       const actual = similarity('hello', 'hello');
       expect(actual).toEqual(expected);
@@ -33,6 +29,10 @@ describe('determine how similar two values are', () => {
     });
     it('[] and null', () => {
       expect(similarity([], null)).toEqual(expected);
+    });
+    it('NaN and NaN', () => {
+      const actual = similarity(NaN, NaN);
+      expect(actual).toEqual(expected);
     });
   });
   describe('nothing alike', () => {
